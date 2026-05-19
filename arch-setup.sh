@@ -29,6 +29,8 @@ if [[ "$lang_choice" == "2" ]]; then
 
   echo ">>> Memperbarui dan mengupgrade arch..."
   echo "Proses ini mungkin memakan waktu. Pastikan koneksi internet Anda stabil."
+  sed -i 's/^#DisableSandbox/DisableSandbox/g' /etc/pacman.conf
+  
   pacman -Syu
 
   echo ">>> Menginstal program penting: sudo, nano, pulseaudio..."
