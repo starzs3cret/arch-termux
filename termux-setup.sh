@@ -56,7 +56,8 @@ fi
   echo "------------------------------------------------------------------"
 
   echo ">>> Menginstal Arch Linux..."
-  proot-distro install archlinux
+  proot-distro install danhunsaker/archlinuxarm --name archlinux
+ 
 
   echo ">>> Masuk ke shell Arch Linux..."
   sleep 5
